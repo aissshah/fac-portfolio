@@ -1,29 +1,47 @@
 <!DOCTYPE html>
+<html>
 <head>
-  //maybe rename skeleton to index for standardisation later
+  <!--maybe rename skeleton to index for standardisation later
+  in general, need to demonstrate learning from pre-requisites
+  responsive & accessible-->
   <title>Aishah's Area</title>
-  //in general, need to demonstrate learning from pre-requisites
-  //responsive & accessible
 </head>
 <body>
+  <h1></h1>
   <div>
-    //carousel- for design, make a vcr?
-    /* responsive, display one image at a time, buttons to move between images,
+    <!--carousel- for design, make a vcr?
+    responsive, display one image at a time, buttons to move between images,
     button to toggle automatic loop with play/pause button
-    keyboard navigation between images with left/right arrow keys
-    */
+    keyboard navigation between images with left/right arrow keys-->
+    <button onclick="prev()">Prev</button>
+    <img id="slider" src="1.jpg" width=20% height=20%>
+    <button onclick="next()">Next</button>
+  </div>
+  <script>
+    let imagCarou = ["1.jpg", "2.jpg", "3.png"];
+    let num = 0;
+
+    function next() {
+      let slider = document.getElementbyId("slider");
+      num++;
+      if (num >= imagCarou.length) {
+        num = 0
+      }
+      slider.src = imagCarou[num];
+    }
+
+  </script>
+  <div>
+    <h2>About Me</h2>
+    <!--info goes in here, a picture maybe-->
   </div>
   <div>
-    <p>About Me</p>
-    //info goes in here, a picture maybe
+    <h2>F.A.Q.</h2>
+    <!--why I am applying for this program-->
   </div>
   <div>
-    <p>F.A.Q.</p>
-    //why I am applying for this program
-  </div>
-  <div>
-    <p>Links</p>
-    //links to github repo, FCC, codewards
+    <h2>Links</h2>
+    <!--links to github repo, FCC, codewards-->
   </div>
 </body>
 
