@@ -18,3 +18,15 @@ function prev() {
   }
   slider.src = imagCarou[num];
 }
+
+
+
+function slideshow() {
+  auto = setInterval(function() {next()},500);
+}
+
+function pause() {
+  clearInterval(auto);
+}
+
+window.onload = slideshow();
