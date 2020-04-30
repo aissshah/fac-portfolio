@@ -8,18 +8,25 @@
   <link rel="stylesheet" type="text/css" href="skin.css">
 </head>
 <body>
-
-<div id="container">
   <header>
     <h1>AISHAH'S AREA</h1>
   </header>
-  <div id="carou">
+<div id="container">
+  <nav>
+    <ul>
+      <li><a href="#landing">Home</a></li>
+      <li><a href="#carou">Table</a></li>
+      <li><a href="#options">Info</a></li>
+    </ul>
+  </nav>
+  <div class="page" id="landing">
+  <div class="page" id="carou">
     <!--carousel- for design, make a vcr?
     responsive, (display one image at a time), (buttons to move between images),
     (button to toggle automatic loop with play/pause button)
     (keyboard navigation between images with left/right arrow keys)-->
 
-    <img id="slider" src="1.jpg" alt="" width=20% height=20%/>
+    <img id="slider" src="1.jpg" alt="" width=50% height=50%/>
     <button onclick="prev()">Prev</button>
     <button onclick="slideshow()">Play</button>
     <button onclick="pause()">Pause</button>
