@@ -22,7 +22,7 @@ function prev() {
 
 function slideshow() {
   if (checkOn == 0) {
-    auto = window.setInterval(function() {next()},1000); //can be written without window prefix
+    auto = window.setInterval(function() {next()},2000); //can be written without window prefix
     checkOn = 1
   }
 }

@@ -8,36 +8,42 @@
   <link rel="stylesheet" type="text/css" href="skin.css">
 </head>
 <body>
-  <h1></h1>
-  <div>
+
+<div id="container">
+  <header>
+    <h1>AISHAH'S AREA</h1>
+  </header>
+  <div id="carou">
     <!--carousel- for design, make a vcr?
     responsive, (display one image at a time), (buttons to move between images),
     (button to toggle automatic loop with play/pause button)
     (keyboard navigation between images with left/right arrow keys)-->
-    <button onclick="prev()">Prev</button>
+
     <img id="slider" src="1.jpg" alt="" width=20% height=20%/>
+    <button onclick="prev()">Prev</button>
     <button onclick="slideshow()">Play</button>
     <button onclick="pause()">Pause</button>
     <button onclick="next()">Next</button>
-
   </div>
-  <div>
-    <h2>About Me</h2>
-    <!--info goes in here, a picture maybe-->
+  <div id="options">
+    <div id="about">
+      <h2>About Me</h2>
+      <!--info goes in here, a picture maybe-->
+    </div>
+    <div id="faq">
+      <h2>F.A.Q.</h2>
+      <!--why I am applying for this program-->
+    </div>
+    <div id="links">
+      <h2>Links</h2>
+      <!--links to github repo, FCC, codewards-->
+      <p></p>
+      <img>
+      <img>
+      <img>
+    </div>
   </div>
-  <div>
-    <h2>F.A.Q.</h2>
-    <!--why I am applying for this program-->
-  </div>
-  <div>
-    <h2>Links</h2>
-    <!--links to github repo, FCC, codewards-->
-    <p></p>
-    <img>
-    <img>
-    <img>
-  </div>
-
+</div>
   <script src="tissue.js"></script>
 </body>
 
