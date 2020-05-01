@@ -1,7 +1,7 @@
 body {
   /*background-color: #EEEEEE;*/
-  background-image: url(jimmy-ofisia-wXN8DQHrpvI-unsplash.jpg);
-  background-size: 100vw;
+  /*background-image: url(jimmy-ofisia-wXN8DQHrpvI-unsplash.jpg);
+  background-size: 100vw;*/
   /*background-image: linear-gradient(#EEEEEE, #AAAAAA);*/
   height: 100%;
   margin: auto;
@@ -12,11 +12,19 @@ body {
 }
 
 header {
-  background: transparent;
-  text-align: center;
+  background: grey;
+  display: flex;
   position: fixed;
-  width: 100%;
+  width: 100vw;
+  align-items: center;
+  flex-wrap: nowrap;
+  justify-content: center;
   z-index: 1;
+}
+
+.links {
+  width: 5vh;
+  padding: 10px;
 }
 
 #container {
