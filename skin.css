@@ -3,7 +3,6 @@ body {
   /*background-image: url(jimmy-ofisia-wXN8DQHrpvI-unsplash.jpg);
   background-size: 100vw;*/
   /*background-image: linear-gradient(#EEEEEE, #AAAAAA);*/
-  height: 100%;
   margin: auto;
   padding: 0;
   font-family: serif;
@@ -11,10 +10,22 @@ body {
   overflow-y: scroll;
 }
 
+.top-container {
+  background-color: yellow;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+  text-align: center;
+}
+
 header {
   background: grey;
+  position: sticky;
+  top: 0;
   display: flex;
-  position: fixed;
   width: 100vw;
   align-items: center;
   flex-wrap: nowrap;
@@ -27,12 +38,11 @@ header {
   padding: 10px;
 }
 
-#container {
+/*#container {
   width: 100vw;
   height: 100vh;
-
 }
-
+*/
 nav {
   position: fixed;
   top: 50%;
@@ -68,9 +78,8 @@ ul li a:hover {
 }
 
 .page  {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 }
 
 .buttons {
@@ -163,4 +172,13 @@ ul li a:hover {
       padding: 6px 12px;
       border: 1px solid #ccc;
       border-top: none;
+}
+
+.tabcontent {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
 }
