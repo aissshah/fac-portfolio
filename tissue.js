@@ -1,4 +1,4 @@
-let imagCarou = ["1.jpg", "2.jpg", "3.png"];
+let imagCarou = ["images/Aishah-cropped.jpg", "images/Rita-Aishah-Omar.jpg", "images/screencast.jpg", "images/group.jpg", "images/medal.jpg", "images/Green-Man-A.jpg", "images/trophy.jpg"];
 let num = 0;
 let checkOn = 0;
 
