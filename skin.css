@@ -1,5 +1,7 @@
 body {
-  background-color: #EEEEEE;
+  /*background-color: #EEEEEE;*/
+  background-image: url(jimmy-ofisia-wXN8DQHrpvI-unsplash.jpg);
+  background-size: 100vw;
   /*background-image: linear-gradient(#EEEEEE, #AAAAAA);*/
   height: 100%;
   margin: auto;
@@ -10,14 +12,15 @@ body {
 }
 
 header {
-  padding: 1px;
-  background-color: #AAAAAA;
+  background: transparent;
   text-align: center;
-  /*position: fixed;*/
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 #container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 
 }
@@ -25,7 +28,7 @@ header {
 nav {
   position: fixed;
   top: 50%;
-  left: 0%;
+  left: 0;
   margin: 0;
   padding: 0;
   z-index: 1;
@@ -62,11 +65,15 @@ ul li a:hover {
   height: 100%;
 }
 
-#carou {
-  align: center;
+.buttons {
+
 }
 
-img {
+#carou {
+
+}
+
+#carou img {
   border:solid 2px;
   border-bottom-color:#ffe;
   border-left-color:#eed;

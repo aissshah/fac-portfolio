@@ -10,48 +10,44 @@
 <body>
   <header>
     <h1>AISHAH'S AREA</h1>
+    <a href="https://www.codewars.com/users/freakyfreak"><img class="links" src="codewars.svg" alt=""></a>
+    <a href="https://www.freecodecamp.org/freakaish"><img class="links" src="FCCfirelogoblack.svg" alt=""></a>
+    <a href="https://github.com/freakaish"><img class="links" src="GitHub-Mark-120px-plus.png" alt=""></a>
   </header>
 <div id="container">
   <nav>
     <ul>
-      <li><a href="#landing">Home</a></li>
+      <!--<li><a href="#landing">Home</a></li>-->
       <li><a href="#carou">Table</a></li>
       <li><a href="#options">Info</a></li>
     </ul>
   </nav>
-  <div class="page" id="landing">
+  <!--<div class="page" id="landing"></div>-->
   <div class="page" id="carou">
-    <!--carousel- for design, make a vcr?
-    responsive, (display one image at a time), (buttons to move between images),
-    (button to toggle automatic loop with play/pause button)
-    (keyboard navigation between images with left/right arrow keys)-->
-
+    <!--carousel responsive -->
     <div class="frame">
       <img id="slider" src="1.jpg" alt=""/>
     </div>
-    <button onclick="prev()">Prev</button>
-    <button onclick="slideshow()">Play</button>
-    <button onclick="pause()">Pause</button>
-    <button onclick="next()">Next</button>
+    <div class="buttons">
+      <button onclick="prev()">Prev</button>
+      <button onclick="slideshow()">Play</button>
+      <button onclick="pause()">Pause</button>
+      <button onclick="next()">Next</button>
+    </div>
   </div>
   <div id="options">
-    <div id="about" class="frame">
+    <div id="about" class="frame2">
       <h2>About Me</h2>
       <!--info goes in here, a picture maybe-->
+      <p>Hi there! I'm Aishah, a hard-working recent graduate.</p>
     </div>
-    <div id="faq" class="frame">
+    <div id="faq" class="frame2">
       <h2>F.A.Q.</h2>
       <!--why I am applying for this program-->
     </div>
-    <div id="links" class="frame">
-      <h2>Links</h2>
-      <!--links to github repo, FCC, codewards-->
-      <p></p>
-      <img>
-      <img>
-      <img>
-    </div>
+
   </div>
+  <footer>???</footer>
 </div>
   <script src="tissue.js"></script>
 </body>
