@@ -45,7 +45,7 @@ body {
 }
 
 header {
-  background: grey;
+  background: #4d4d4d;
   position: sticky;
   top: 0;
   display: flex;
@@ -72,19 +72,30 @@ header {
 
 #first {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   margin: auto;
+  grid-gap: 3%;
 }
 
 #aboutpage  {
   border: 3px solid green;
 }
-.buttons {
 
+.buttons button {
+  color: #000000;
+  background-color: grey;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #carou {
-
+  display: grid;
+  grid-row: 5fr 1fr 1fr;
+  justify-items: center;
 }
 
 #carou img {
@@ -95,6 +106,14 @@ header {
   border-top-color:#ccb;
   max-height:100%;
   max-width:100%;
+}
+
+#caption {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 5px 10px;
+  text-align: center;
+  margin: auto;
 }
 
 #options {
