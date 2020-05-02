@@ -1,3 +1,7 @@
+:root {
+
+}
+
 body {
   /*background-color: #EEEEEE;*/
   /*background-image: url(jimmy-ofisia-wXN8DQHrpvI-unsplash.jpg);
@@ -10,8 +14,27 @@ body {
   overflow-y: scroll;
 }
 
+@font-face {
+  font-family: neonLib;
+  src: url(library3am.otf);
+}
+
+.neon-text {
+  font-family: neonLib;
+  font-size: 300%;
+  color: #ffd8d8;
+  text-shadow:
+    .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+    .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+    .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757,
+
+    .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b,
+    .1vw 0vw   5vw #e50b0b, .2vw 0vw  15vw #e50b0b, .4vw 0vw  6vw #e50b0b;
+}
+
 .top-container {
-  background-color: yellow;
+  background: rgb(57,57,57);
+  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 100%);
   height: 90vh;
   display: flex;
   justify-content: center;
@@ -26,7 +49,6 @@ header {
   position: sticky;
   top: 0;
   display: flex;
-  width: 100vw;
   align-items: center;
   flex-wrap: nowrap;
   justify-content: center;
@@ -78,7 +100,6 @@ ul li a:hover {
 }
 
 .page  {
-  width: 100vw;
   height: 100vh;
 }
 
