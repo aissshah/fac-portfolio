@@ -43,6 +43,7 @@ window.addEventListener("keydown", function(event) {
 
 
 window.onload = slideshow();
+document.getElementById("defaultOpen").click();
 
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
@@ -58,5 +59,5 @@ function openTab(evt, tabName) {
   }
 
   document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.className += " active";
+  evt.currentTarget.className += "active";
 }

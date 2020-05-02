@@ -156,6 +156,8 @@ ul li a:hover {
       outline: none;
       cursor: pointer;
       padding: 14px 16px;
+      width: 25%;
+      font-size: 18px;
       transition: 0.3s;
 }
 
