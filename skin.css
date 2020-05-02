@@ -3,7 +3,7 @@
 }
 
 body {
-  /*background-color: #EEEEEE;*/
+  /*background-color: #000000*/;
   /*background-image: url(jimmy-ofisia-wXN8DQHrpvI-unsplash.jpg);
   background-size: 100vw;*/
   /*background-image: linear-gradient(#EEEEEE, #AAAAAA);*/
@@ -101,6 +101,9 @@ ul li a:hover {
 
 .page  {
   height: 100vh;
+  background: rgb(57,57,57);
+  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 100%);
+
 }
 
 .buttons {
