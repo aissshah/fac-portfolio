@@ -60,11 +60,11 @@ header {
   padding: 10px;
 }
 
-/*#container {
-  width: 100vw;
-  height: 100vh;
+#container {
+  background: rgb(57,57,57);
+  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 100%);
 }
-*/
+
 nav {
   position: fixed;
   top: 50%;
@@ -101,9 +101,13 @@ ul li a:hover {
 
 .page  {
   height: 100vh;
-  background: rgb(57,57,57);
-  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 100%);
+  width: 80%;
+  text-align: center;
 
+}
+
+#aboutpage {
+  display: grid;
 }
 
 .buttons {
@@ -111,7 +115,7 @@ ul li a:hover {
 }
 
 #carou {
-
+  display: inline-block;
 }
 
 #carou img {
@@ -122,6 +126,10 @@ ul li a:hover {
   border-top-color:#ccb;
   max-height:100%;
   max-width:100%;
+}
+
+#options {
+  margin: 0 auto;
 }
 
 /*set a size for pictures?*/
@@ -141,7 +149,6 @@ ul li a:hover {
   padding:8vmin;
   position: relative;
   text-align: center;
-
 }
 
 .frame::before {
