@@ -89,6 +89,7 @@ header {
   grid-gap: 3%;
   align-items: flex-start;
   height: 200vh;
+  width: 100vw;
 }
 
 @media only screen and (min-width: 900px) {
