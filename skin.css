@@ -68,6 +68,10 @@ header {
   filter: invert(100%);
 }
 
+.links:hover {
+    background-color: #20a9a9;
+}
+
 #container {
   background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 70%);
   min-height: 120%;
