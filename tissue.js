@@ -1,3 +1,4 @@
+//Declaring variables
 let imagCarou = ["images/Aishah-cropped.jpg", "images/Rita-Aishah-Omar.jpg", "images/screencast.jpg", "images/group.jpg", "images/medal.jpg", "images/Green-Man-A.jpg", "images/trophy.jpg"];
 let captions = [
   "March 2019: Securing my place in the ladies final",
@@ -11,6 +12,7 @@ let captions = [
 let num = 0;
 let checkOn = 0;
 
+//Image carousel functions
 function next() {
   let slider = document.getElementById("slider");
   let cappy = document.getElementById("caption");
@@ -33,6 +35,7 @@ function prev() {
   cappy.innerHTML = captions[num];
 }
 
+//responsible for the loop of the image carousel
 function slideshow() {
   if (checkOn == 0) {
     auto = window.setInterval(function() {next()},2000); //can be written without window prefix
@@ -40,12 +43,14 @@ function slideshow() {
   }
 }
 
+//stops the loop
 function pause() {
   if (checkOn == 1)
     clearInterval(auto);
     checkOn = 0
 }
 
+//enables keyboard control of the image carousel
 window.addEventListener("keydown", function(event) {
   if (event.key == "ArrowLeft") {
     prev();
@@ -54,9 +59,11 @@ window.addEventListener("keydown", function(event) {
   }
 });
 
+//starts the loop when the page loads and opens the About Me tab
 window.onload = slideshow();
 document.getElementById("defaultOpen").click();
 
+//function behind the Content tabs
 function openTab(evt, tabName) {
   var i, tabcontent, tablinks;
 
