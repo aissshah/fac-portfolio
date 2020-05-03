@@ -75,11 +75,13 @@ header {
 #container {
   background: rgb(57,57,57);
   background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 100%);
+  height: auto;
 }
 
 .page  {
-  min-height: 100vh;
-  width: 80vw;
+  min-height: 100%;
+  width: 80%;
+  max-width: 100vw;
 }
 
 #first {
@@ -126,6 +128,7 @@ header {
  width: 400px;
  height: 400px;
  object-fit: scale-down;
+ max-width: 80vw;
 }
 
 #caption {
@@ -148,6 +151,7 @@ header {
     overflow: hidden;
     border: 1px solid #333333;
     background-color: #0E0E0E;
+    max-width: 80vw;
 }
 
 .tab button {
@@ -164,7 +168,7 @@ header {
       font-family: antic;
 }
 
-.tab #whyprog {
+.tab button #whyprog {
   width: 34%;
 }
 
@@ -181,6 +185,7 @@ button.active {
       padding: 6px 12px;
       /*border: 1px solid #333333;*/
       border-top: none;
+      max-width: 80vw;
 }
 
 .tabcontent {
@@ -190,4 +195,8 @@ button.active {
 @keyframes fadeEffect {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+footer {
+  clear: both;
 }
