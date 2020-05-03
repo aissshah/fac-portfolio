@@ -6,7 +6,7 @@ body {
   margin: auto;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: andika;
+  font-family: amiko;
 }
 
 @font-face {
@@ -15,8 +15,8 @@ body {
 }
 
 @font-face {
-  font-family: andika;
-  src: url(Andika-R.ttf);
+  font-family: amiko;
+  src: url(Amiko-Regular.ttf);
 }
 
 .neon-text {
@@ -88,7 +88,6 @@ header {
   margin: auto;
   grid-gap: 3%;
   align-items: flex-start;
-  overflow: auto;
   height: 200vh;
 }
 
@@ -130,8 +129,9 @@ header {
 }
 
 #caption {
+  color: #0E0E0E;
+  border: 1px solid #333333;
   background-color: #ffffff;
-  border-radius: 12px;
   padding: 5px 10px;
   text-align: center;
   margin: auto;
