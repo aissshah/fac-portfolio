@@ -155,15 +155,11 @@ header {
       outline: none;
       cursor: pointer;
       padding: 14px 16px;
-      width: 33%;
+      width: 33.33%;
       font-size: 18px;
       transition: 0.3s;
       color: #ffffff;
       font-family: antic;
-}
-
-.tab button #whyprog {
-  width: 34%;
 }
 
 button:hover {

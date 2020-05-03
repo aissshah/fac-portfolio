@@ -31,7 +31,6 @@ function prev() {
   }
   slider.src = imagCarou[num];
   cappy.innerHTML = captions[num];
-
 }
 
 function slideshow() {
@@ -54,7 +53,6 @@ window.addEventListener("keydown", function(event) {
     next();
   }
 });
-
 
 window.onload = slideshow();
 document.getElementById("defaultOpen").click();
