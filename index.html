@@ -21,11 +21,27 @@
   </header>
 
 <div id="container">
-  <div class="page" id="first">
-  <div id="aboutpage" class="frame">
-    <h2>About Me</h2>
-    <p>Hi, I'm Aishah. As you've probably guessed, I quite like pool.
-       I've lived in London for almost 8 years now.</p>
+  <div id="first" class="page">
+  <div id="options">
+    <div class="tab">
+      <button class="tablinks" onclick="openTab(event,'about')" id="defaultOpen">About Me</button>
+      <button class="tablinks" onclick="openTab(event,'faq')">FAQ</button>
+      <button class="tablinks" onclick="openTab(event,'whyprog')">Why FAC</button>
+    </div>
+
+    <div id="about" class="tabcontent">
+      <h2>About Me</h2>
+      <!--info goes in here, a picture maybe-->
+      <p>Hi there! I'm Aishah, a hard-working recent graduate.</p>
+    </div>
+    <div id="faq" class="tabcontent">
+      <h2>F.A.Q.</h2>
+      <p>Stuff lalalalalalala</p>
+    </div>
+    <div id="whyprog" class="tabcontent">
+      <h2>Why FAC</h2>
+      <p>Stuff lalalalalalala</p>
+    </div>
   </div>
 
   <div id="carou">
@@ -43,32 +59,7 @@
     </div>
   </div>
 </div>
-  <div id="options" class="page">
-    <div class="tab">
-      <button class="tablinks" onclick="openTab(event,'about')" id="defaultOpen">About Me</button>
-      <button class="tablinks" onclick="openTab(event,'faq')">FAQ</button>
-      <button class="tablinks" onclick="openTab(event,'whyprog')">Why FAC</button>
-      <button class="tablinks" onclick="openTab(event,'whyme')">Why Me</button>
-    </div>
 
-    <div id="about" class="tabcontent">
-      <h2>About Me</h2>
-      <!--info goes in here, a picture maybe-->
-      <p>Hi there! I'm Aishah, a hard-working recent graduate.</p>
-    </div>
-    <div id="faq" class="tabcontent">
-      <h2>F.A.Q.</h2>
-      <p>Stuff lalalalalalala</p>
-    </div>
-    <div id="whyprog" class="tabcontent">
-      <h2>Why FAC</h2>
-      <p>Stuff lalalalalalala</p>
-    </div>
-    <div id="whyme" class="tabcontent">
-      <h2>Why me</h2>
-      <p>Stuff lalalalalalala</p>
-    </div>
-  </div>
 </div>
 </body>
 

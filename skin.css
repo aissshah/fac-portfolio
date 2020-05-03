@@ -5,14 +5,19 @@
 body {
   margin: auto;
   padding: 0;
-  font-family: serif;
   scroll-behavior: smooth;
   overflow-y: scroll;
+  font-family: andika;
 }
 
 @font-face {
   font-family: neonLib;
   src: url(library3am.otf);
+}
+
+@font-face {
+  font-family: andika;
+  src: url(Andika-R.ttf);
 }
 
 .neon-text {
@@ -40,7 +45,7 @@ body {
 
 .top-container {
   background: rgb(57,57,57);
-  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 50%);
   height: 94vh;
   display: flex;
   justify-content: center;
@@ -51,7 +56,7 @@ body {
 }
 
 header {
-  background: #4d4d4d;
+  background: #000000;
   position: sticky;
   top: 0;
   display: flex;
@@ -69,7 +74,7 @@ header {
 
 #container {
   background: rgb(57,57,57);
-  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 50%);
 
 }
 
@@ -102,8 +107,7 @@ header {
 }
 
 .buttons button {
-  color: #000000;
-  background-color: grey;
+  background-color: #0E0E0E;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -111,6 +115,11 @@ header {
   font-size: 14px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
   0 6px 20px 0 rgba(0,0,0,0.19);
+  cursor: pointer;
+  padding: 14px 24px;
+  transition: 0.3s;
+  color: #ffffff;
+  font-family: andika;
 }
 
 #carou {
@@ -121,13 +130,7 @@ header {
 }
 
 #carou img {
-  border:solid 2px;
-  border-bottom-color:#001001;
-  border-left-color:#112112;
-  border-right-color:#112112;
-  border-top-color:#303030;
-  max-height:100%;
-  max-width:100%;
+ max-width: 50vw;
 }
 
 #caption {
@@ -138,7 +141,7 @@ header {
   margin: auto;
 }
 
-/*set a size for pictures?*/
+/*
 .frame {
   background-color:#303030;
   border:solid 5vmin #111111;
@@ -152,7 +155,7 @@ header {
   0 5px 10px 5px rgba(242,87,87,.25);
   box-sizing:border-box;
   display:inline-block;
-  /*margin:10vh 10vw;*/
+  margin:10vh 10vw;
   height:70vh;
   padding:8vmin;
   position: relative;
@@ -181,6 +184,8 @@ header {
       right:-2.5vmin;
       top:-2.5vmin;
     }
+    */
+
 
 #options {
   margin: 0 auto;
@@ -202,17 +207,22 @@ header {
       outline: none;
       cursor: pointer;
       padding: 14px 16px;
-      width: 25%;
+      width: 33%;
       font-size: 18px;
       transition: 0.3s;
       color: #ffffff;
+      font-family: andika;
 }
 
-.tab button:hover {
+.tab #whyprog {
+  width: 34%;
+}
+
+button:hover {
     background-color: #923636;
 }
 
-.tab button.active {
+button.active {
     background-color: #333333;
 }
 
