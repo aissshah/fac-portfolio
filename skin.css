@@ -6,7 +6,6 @@ body {
   margin: auto;
   padding: 0;
   scroll-behavior: smooth;
-  overflow-y: scroll;
   font-family: andika;
 }
 
@@ -45,7 +44,8 @@ body {
 
 .top-container {
   background: rgb(57,57,57);
-  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 50%);
+  background:
+    radial-gradient(ellipse, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 80%);
   height: 94vh;
   display: flex;
   justify-content: center;
@@ -88,21 +88,14 @@ header {
   margin: auto;
   grid-gap: 3%;
   align-items: flex-start;
-  overflow: visible;
+  overflow: auto;
+  height: 200vh;
 }
-
-/*#aboutpage  {
-  padding: 10px;
-  background-color: #303030;
-  border: 7px solid #000000;
-  box-shadow: 0 5px 10px 5px rgba(51,51,51,.5);
-  color: #dedede;
-}*/
-
 
 @media only screen and (min-width: 900px) {
   #first {
     grid-template-columns: 1fr 1fr;
+    height: 100%;
   }
 }
 
@@ -186,7 +179,7 @@ button.active {
 .tabcontent {
       display: none;
       padding: 6px 12px;
-      border: 1px solid #333333;
+      /*border: 1px solid #333333;*/
       border-top: none;
 }
 
