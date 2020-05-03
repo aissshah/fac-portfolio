@@ -63,13 +63,14 @@ header {
 }
 
 .links {
-  width: 5vh;
-  padding: 5px;
+  height: 4vh;
+  padding: 7px;
   filter: invert(100%);
 }
 
 .links:hover {
     background-color: #20a9a9;
+    cursor: pointer;
 }
 
 #container {
