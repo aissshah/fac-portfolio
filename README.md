@@ -5,6 +5,6 @@
 
 Happy viewing. Constructive criticism welcome!
 
-<u>What I would change next time</u>
+What I would change next time:
 1. For responsiveness, create in mobile first.
 2. Improve accessibility of the website.
