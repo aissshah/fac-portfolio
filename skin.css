@@ -6,7 +6,7 @@ body {
   margin: auto;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: amiko;
+  font-family: antic;
 }
 
 @font-face {
@@ -15,8 +15,8 @@ body {
 }
 
 @font-face {
-  font-family: amiko;
-  src: url(Amiko-Regular.ttf);
+  font-family: antic;
+  src: url(Antic-Regular.ttf);
 }
 
 .neon-text {
@@ -79,7 +79,7 @@ header {
 
 .page  {
   min-height: 100vh;
-  width: 80%;
+  width: 80vw;
 }
 
 #first {
@@ -89,7 +89,6 @@ header {
   grid-gap: 3%;
   align-items: flex-start;
   height: 200vh;
-  width: 100vw;
 }
 
 @media only screen and (min-width: 900px) {
@@ -112,7 +111,7 @@ header {
   padding: 14px 24px;
   transition: 0.3s;
   color: #ffffff;
-  font-family: andika;
+  font-family: antic;
 }
 
 #carou {
@@ -162,7 +161,7 @@ header {
       font-size: 18px;
       transition: 0.3s;
       color: #ffffff;
-      font-family: andika;
+      font-family: antic;
 }
 
 .tab #whyprog {
