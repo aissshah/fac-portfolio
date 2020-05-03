@@ -69,7 +69,7 @@ header {
 }
 
 #container {
-  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(57,57,57,1) 0%, rgba(67,67,69,1) 0%, rgba(0,0,0,1) 70%);
   min-height: 120%;
 }
 
@@ -155,7 +155,7 @@ header {
       outline: none;
       cursor: pointer;
       padding: 14px 16px;
-      width: 33.33%;
+      width: 50%;
       font-size: 18px;
       transition: 0.3s;
       color: #ffffff;
