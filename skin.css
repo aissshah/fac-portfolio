@@ -3,10 +3,6 @@
 }
 
 body {
-  /*background-color: #000000*/;
-  /*background-image: url(jimmy-ofisia-wXN8DQHrpvI-unsplash.jpg);
-  background-size: 100vw;*/
-  /*background-image: linear-gradient(#EEEEEE, #AAAAAA);*/
   margin: auto;
   padding: 0;
   font-family: serif;
@@ -24,12 +20,22 @@ body {
   font-size: 300%;
   color: #ffd8d8;
   text-shadow:
-    .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
-    .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
-    .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757,
+    .1vw 0vw   0vw #f25757,
+    .2vw 0vw   0vw #f25757,
+    .4vw 0vw   0vw #f25757,
+    .1vw 0vw  .1vw #f25757,
+    .2vw 0vw  .1vw #f25757,
+    .4vw 0vw  .1vw #f25757,
+    .1vw 0vw   2vw #f25757,
+    .2vw 0vw   2vw #f25757,
+    .4vw 0vw   2vw #f25757,
 
-    .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b,
-    .1vw 0vw   5vw #e50b0b, .2vw 0vw  15vw #e50b0b, .4vw 0vw  6vw #e50b0b;
+    .1vw 0vw   1vw #e50b0b,
+    .2vw 0vw   1vw #e50b0b,
+    .4vw 0vw   5vw #e50b0b,
+    .1vw 0vw   5vw #e50b0b,
+    .2vw 0vw  15vw #e50b0b,
+    .4vw 0vw  6vw #e50b0b;
 }
 
 .top-container {
@@ -81,9 +87,11 @@ header {
 }
 
 #aboutpage  {
-  background-color: #ffffff;
   padding: 10px;
-  border: 3px solid green;
+  background-color: #303030;
+  border: 7px solid #000000;
+  box-shadow: 0 5px 10px 5px rgba(51,51,51,.5);
+  color: #dedede;
 }
 
 
@@ -101,21 +109,23 @@ header {
   text-decoration: none;
   display: inline-block;
   font-size: 14px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2),
+  0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 #carou {
   display: grid;
   grid-row: 5fr 1fr 1fr;
   justify-items: center;
+  grid-row-gap: 15px;
 }
 
 #carou img {
   border:solid 2px;
-  border-bottom-color:#ffe;
-  border-left-color:#eed;
-  border-right-color:#eed;
-  border-top-color:#ccb;
+  border-bottom-color:#001001;
+  border-left-color:#112112;
+  border-right-color:#112112;
+  border-top-color:#303030;
   max-height:100%;
   max-width:100%;
 }
@@ -128,22 +138,22 @@ header {
   margin: auto;
 }
 
-
-
 /*set a size for pictures?*/
 .frame {
-  background-color:#ddc;
-  border:solid 5vmin #eee;
-  border-bottom-color:#fff;
-  border-left-color:#eee;
+  background-color:#303030;
+  border:solid 5vmin #111111;
+  border-bottom-color:#000000;
+  border-left-color:#111111;
   border-radius:2px;
-  border-right-color:#eee;
-  border-top-color:#ddd;
-  box-shadow:0 0 5px 0 rgba(0,0,0,.25) inset, 0 5px 10px 5px rgba(0,0,0,.25);
+  border-right-color:#111111;
+  border-top-color:#222222;
+  box-shadow:
+  0 0 5px 0 rgba(0,0,0,.25) inset,
+  0 5px 10px 5px rgba(242,87,87,.25);
   box-sizing:border-box;
   display:inline-block;
   /*margin:10vh 10vw;*/
-  height:80vh;
+  height:70vh;
   padding:8vmin;
   position: relative;
   text-align: center;
@@ -152,7 +162,7 @@ header {
 .frame::before {
       border-radius:2px;
       bottom:-2vmin;
-      box-shadow:0 2px 5px 0 rgba(0,0,0,.25) inset;
+      box-shadow:0 2px 5px 0 rgba(255,255,255,.25) inset;
       content:"";
       left:-2vmin;
       position:absolute;
@@ -164,7 +174,7 @@ header {
 .frame::after {
       border-radius:2px;
       bottom:-2.5vmin;
-      box-shadow: 0 2px 5px 0 rgba(0,0,0,.25);
+      box-shadow: 0 2px 5px 0 rgba(255,255,255,.25);
       content:"";
       left:-2.5vmin;
       position:absolute;
@@ -175,13 +185,14 @@ header {
 #options {
   margin: 0 auto;
   margin-top: 50px;
+  color: #ffffff;
 
 }
 
 .tab {
-      overflow: hidden;
-      border: 1px solid #ccc;
-      background-color: #f1f1f1;
+    overflow: hidden;
+    border: 1px solid #333333;
+    background-color: #0E0E0E;
 }
 
 .tab button {
@@ -194,20 +205,21 @@ header {
       width: 25%;
       font-size: 18px;
       transition: 0.3s;
+      color: #ffffff;
 }
 
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #923636;
 }
 
 .tab button.active {
-    background-color: #ccc;
+    background-color: #333333;
 }
 
 .tabcontent {
       display: none;
       padding: 6px 12px;
-      border: 1px solid #ccc;
+      border: 1px solid #333333;
       border-top: none;
 }
 
